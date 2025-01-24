@@ -14,45 +14,97 @@
   </head>
   <body>
     <div class="container">
-      <header>
-        <h1>Pickleball Việt Nam</h1>
-      </header>
+      <!-- <header>
+        <img
+          src="./logotrungtam.jpg"
+          alt="Pickleball Center Logo"
+          class="logo-img"
+        />
+      </header> -->
 
       <main>
         <div class="hero">
-          <img
-            src="https://images.unsplash.com/photo-1632831753809-8c4e9829abfd"
-            alt="Sân Pickleball"
-            class="hero-image"
-          />
           <div class="hero-content">
-            <h2>Đặt Sân Ngay</h2>
-            <p>Trải nghiệm môn thể thao năng động và thú vị</p>
-            <a href="https://your-booking-link.com" class="cta-button"
-              >Đặt Sân</a
-            >
+            <h2>Pickleball Center</h2>
+            <div class="hero-actions">
+              <a href="tel:84963338563" class="hero-button">
+                <span>Gọi Ngay</span>
+              </a>
+              <a href="#calendar" class="hero-button">
+                <span>Đặt Sân Online</span>
+              </a>
+            </div>
           </div>
         </div>
 
         <div class="features">
           <div class="feature-card">
             <h3>Sân Tiêu Chuẩn</h3>
-            <p>Đạt chuẩn thi đấu quốc tế</p>
+            <p>Kích thước 20x44 feet (6.1x13.41m)</p>
           </div>
           <div class="feature-card">
             <h3>Giá Cả Hợp Lý</h3>
-            <p>Nhiều gói đặt sân linh hoạt</p>
+            <p>Giá thuê sân từ 50.000đ/giờ</p>
           </div>
           <div class="feature-card">
             <h3>Dễ Dàng Đặt Sân</h3>
-            <p>Đặt sân online nhanh chóng</p>
+            <p>Linh hoạt 7 ngày trong tuần</p>
           </div>
         </div>
-      </main>
 
+        <section id="calendar" class="calendar-section">
+          <div class="section-header">
+            <h2>Lịch Đặt Sân</h2>
+            <p class="section-description">
+              Chọn thời gian phù hợp với bạn. Chúng tôi sẽ xác nhận qua số điện
+              thoại bạn cung cấp.
+            </p>
+          </div>
+          <div class="calendar-container">
+            <iframe
+              src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3Ir_g6DlM4YS86t_PoxuxZc3PGtnZ9Q075aWWlgvjVrv37Kt8U2yIeTH8gEWpWDqp-ahoZKdNk?gv=true"
+              width="100%"
+              height="500"
+              frameborder="0"
+            >
+            </iframe>
+          </div>
+        </section>
+
+        <!-- <section class="contact-info">
+          <h3>Thông Tin Liên Hệ</h3>
+          <div class="contact-links">
+            <a href="tel:84123456789" class="contact-link">
+              <span>Gọi Ngay</span>
+              <span>(84) 123-456-789</span>
+            </a>
+            <a href="https://maps.google.com" class="contact-link">
+              <span>Chỉ Đường</span>
+              <span>123 Đường ABC, Quận XYZ</span>
+            </a>
+            <a href="mailto:info@pickleballvietnam.com" class="contact-link">
+              <span>Gửi Email</span>
+              <span>info@pickleballvietnam.com</span>
+            </a>
+          </div>
+        </section> -->
+      </main>
+      <!-- <section class="sponsors">
+        <h3>Đối Tác & Nhà Tài Trợ</h3>
+        <div class="sponsor-logos">
+          <img src="./logo1.jpg" alt="Sponsor 1" class="sponsor-logo" />
+          <img src="./logo2.jpg" alt="Sponsor 2" class="sponsor-logo" />
+          <img src="./logo3.jpg" alt="Sponsor 3" class="sponsor-logo" />
+          <img src="./logo4.jpg" alt="Sponsor 4" class="sponsor-logo" />
+        </div>
+      </section> -->
       <footer>
-        <p>&copy; 2024 Pickleball Việt Nam. All rights reserved.</p>
+        <p>&copy; <span id="currentYear">2025</span> Pickleball Center</p>
       </footer>
     </div>
+    <script>
+      document.getElementById("currentYear").textContent =
+        new Date().getFullYear();
+    </script>
   </body>
 </html>
